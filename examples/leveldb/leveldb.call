@@ -1,0 +1,1747 @@
+8584 1
+  -> 8584 main
+    -> 0 leveldb::Options::Options probe
+      -> 1 leveldb::BytewiseComparator probe
+        -> 2 BytewiseComparatorImpl probe
+        <- 2 BytewiseComparatorImpl
+      <- 1 leveldb::BytewiseComparator
+      -> 4 leveldb::Env::Default probe
+        -> 5 SingletonEnv probe
+        <- 5 SingletonEnv
+        -> 6 PosixLockTable probe
+        <- 6 PosixLockTable
+        -> 7 MaxMmaps probe
+        <- 7 MaxMmaps
+        -> 8 MaxOpenFiles probe
+        <- 8 MaxOpenFiles
+        -> 9 Limiter probe
+        <- 9 Limiter
+        -> 10 Limiter probe
+        <- 10 Limiter
+        -> 11 env probe
+        <- 11 env
+      <- 4 leveldb::Env::Default
+    <- 0 leveldb::Options::Options
+    -> 14 leveldb::DB::Open probe
+      -> 15 leveldb::DBImpl::DBImpl probe
+        -> 16 leveldb::DBImpl::DBImpl probe
+          -> 17 leveldb::SanitizeOptions probe
+            -> 18 leveldb::(anonymous namespace)::PosixEnv::CreateDir probe
+              -> 19 leveldb::(anonymous namespace)::PosixError probe
+                -> 20 leveldb::Status::Status probe
+                <- 20 leveldb::Status::Status
+              <- 19 leveldb::(anonymous namespace)::PosixError
+            <- 18 leveldb::(anonymous namespace)::PosixEnv::CreateDir
+            -> 24 leveldb::OldInfoLogFileName probe
+            <- 24 leveldb::OldInfoLogFileName
+            -> 26 leveldb::InfoLogFileName probe
+            <- 26 leveldb::InfoLogFileName
+            -> 28 leveldb::(anonymous namespace)::PosixEnv::RenameFile probe
+            <- 28 leveldb::(anonymous namespace)::PosixEnv::RenameFile
+            -> 30 leveldb::InfoLogFileName probe
+            <- 30 leveldb::InfoLogFileName
+            -> 32 leveldb::(anonymous namespace)::PosixEnv::NewLogger probe
+            <- 32 leveldb::(anonymous namespace)::PosixEnv::NewLogger
+            -> 34 leveldb::NewLRUCache probe
+              -> 35 ShardedLRUCache probe
+              <- 35 ShardedLRUCache
+              -> 36 HandleTable probe
+              <- 36 HandleTable
+              -> 37 Resize probe
+              <- 37 Resize
+              -> 38 HandleTable probe
+              <- 38 HandleTable
+              -> 39 Resize probe
+              <- 39 Resize
+              -> 40 HandleTable probe
+              <- 40 HandleTable
+              -> 41 Resize probe
+              <- 41 Resize
+              -> 42 HandleTable probe
+              <- 42 HandleTable
+              -> 43 Resize probe
+              <- 43 Resize
+              -> 44 HandleTable probe
+              <- 44 HandleTable
+              -> 45 Resize probe
+              <- 45 Resize
+              -> 46 HandleTable probe
+              <- 46 HandleTable
+              -> 47 Resize probe
+              <- 47 Resize
+              -> 48 HandleTable probe
+              <- 48 HandleTable
+              -> 49 Resize probe
+              <- 49 Resize
+              -> 50 HandleTable probe
+              <- 50 HandleTable
+              -> 51 Resize probe
+              <- 51 Resize
+              -> 52 HandleTable probe
+              <- 52 HandleTable
+              -> 53 Resize probe
+              <- 53 Resize
+              -> 54 HandleTable probe
+              <- 54 HandleTable
+              -> 55 Resize probe
+              <- 55 Resize
+              -> 56 HandleTable probe
+              <- 56 HandleTable
+              -> 57 Resize probe
+              <- 57 Resize
+              -> 58 HandleTable probe
+              <- 58 HandleTable
+              -> 59 Resize probe
+              <- 59 Resize
+              -> 60 HandleTable probe
+              <- 60 HandleTable
+              -> 61 Resize probe
+              <- 61 Resize
+              -> 62 HandleTable probe
+              <- 62 HandleTable
+              -> 63 Resize probe
+              <- 63 Resize
+              -> 64 HandleTable probe
+              <- 64 HandleTable
+              -> 65 Resize probe
+              <- 65 Resize
+              -> 66 HandleTable probe
+              <- 66 HandleTable
+              -> 67 Resize probe
+              <- 67 Resize
+              -> 68 SetCapacity probe
+              <- 68 SetCapacity
+            <- 34 leveldb::NewLRUCache
+          <- 17 leveldb::SanitizeOptions
+          -> 71 TableCacheSize probe
+          <- 71 TableCacheSize
+          -> 72 leveldb::TableCache::TableCache probe
+            -> 73 leveldb::TableCache::TableCache probe
+              -> 74 leveldb::NewLRUCache probe
+                -> 75 ShardedLRUCache probe
+                <- 75 ShardedLRUCache
+                -> 76 HandleTable probe
+                <- 76 HandleTable
+                -> 77 Resize probe
+                <- 77 Resize
+                -> 78 HandleTable probe
+                <- 78 HandleTable
+                -> 79 Resize probe
+                <- 79 Resize
+                -> 80 HandleTable probe
+                <- 80 HandleTable
+                -> 81 Resize probe
+                <- 81 Resize
+                -> 82 HandleTable probe
+                <- 82 HandleTable
+                -> 83 Resize probe
+                <- 83 Resize
+                -> 84 HandleTable probe
+                <- 84 HandleTable
+                -> 85 Resize probe
+                <- 85 Resize
+                -> 86 HandleTable probe
+                <- 86 HandleTable
+                -> 87 Resize probe
+                <- 87 Resize
+                -> 88 HandleTable probe
+                <- 88 HandleTable
+                -> 89 Resize probe
+                <- 89 Resize
+                -> 90 HandleTable probe
+                <- 90 HandleTable
+                -> 91 Resize probe
+                <- 91 Resize
+                -> 92 HandleTable probe
+                <- 92 HandleTable
+                -> 93 Resize probe
+                <- 93 Resize
+                -> 94 HandleTable probe
+                <- 94 HandleTable
+                -> 95 Resize probe
+                <- 95 Resize
+                -> 96 HandleTable probe
+                <- 96 HandleTable
+                -> 97 Resize probe
+                <- 97 Resize
+                -> 98 HandleTable probe
+                <- 98 HandleTable
+                -> 99 Resize probe
+                <- 99 Resize
+                -> 100 HandleTable probe
+                <- 100 HandleTable
+                -> 101 Resize probe
+                <- 101 Resize
+                -> 102 HandleTable probe
+                <- 102 HandleTable
+                -> 103 Resize probe
+                <- 103 Resize
+                -> 104 HandleTable probe
+                <- 104 HandleTable
+                -> 105 Resize probe
+                <- 105 Resize
+                -> 106 HandleTable probe
+                <- 106 HandleTable
+                -> 107 Resize probe
+                <- 107 Resize
+                -> 108 SetCapacity probe
+                <- 108 SetCapacity
+              <- 74 leveldb::NewLRUCache
+            <- 73 leveldb::TableCache::TableCache
+          <- 72 leveldb::TableCache::TableCache
+          -> 112 leveldb::WriteBatch::WriteBatch probe
+            -> 113 leveldb::WriteBatch::WriteBatch probe
+              -> 114 leveldb::WriteBatch::Clear probe
+              <- 114 leveldb::WriteBatch::Clear
+            <- 113 leveldb::WriteBatch::WriteBatch
+          <- 112 leveldb::WriteBatch::WriteBatch
+          -> 118 leveldb::VersionSet::VersionSet probe
+            -> 119 leveldb::VersionSet::VersionSet probe
+              -> 120 AppendVersion probe
+              <- 120 AppendVersion
+              -> 121 Ref probe
+              <- 121 Ref
+            <- 119 leveldb::VersionSet::VersionSet
+          <- 118 leveldb::VersionSet::VersionSet
+        <- 16 leveldb::DBImpl::DBImpl
+      <- 15 leveldb::DBImpl::DBImpl
+      -> 126 leveldb::VersionEdit::Clear probe
+      <- 126 leveldb::VersionEdit::Clear
+      -> 128 leveldb::DBImpl::Recover probe
+        -> 129 leveldb::(anonymous namespace)::PosixEnv::CreateDir probe
+          -> 130 leveldb::(anonymous namespace)::PosixError probe
+            -> 131 leveldb::Status::Status probe
+            <- 131 leveldb::Status::Status
+          <- 130 leveldb::(anonymous namespace)::PosixError
+        <- 129 leveldb::(anonymous namespace)::PosixEnv::CreateDir
+        -> 135 leveldb::LockFileName probe
+        <- 135 leveldb::LockFileName
+        -> 137 leveldb::(anonymous namespace)::PosixEnv::LockFile probe
+          -> 138 Insert probe
+          <- 138 Insert
+          -> 139 LockOrUnlock probe
+          <- 139 LockOrUnlock
+          -> 140 PosixFileLock probe
+          <- 140 PosixFileLock
+        <- 137 leveldb::(anonymous namespace)::PosixEnv::LockFile
+        -> 142 leveldb::CurrentFileName probe
+        <- 142 leveldb::CurrentFileName
+        -> 144 leveldb::(anonymous namespace)::PosixEnv::FileExists probe
+        <- 144 leveldb::(anonymous namespace)::PosixEnv::FileExists
+        -> 146 leveldb::VersionSet::Recover probe
+          -> 147 leveldb::CurrentFileName probe
+          <- 147 leveldb::CurrentFileName
+          -> 149 leveldb::ReadFileToString probe
+            -> 150 leveldb::(anonymous namespace)::PosixEnv::NewSequentialFile probe
+              -> 151 PosixSequentialFile probe
+              <- 151 PosixSequentialFile
+            <- 150 leveldb::(anonymous namespace)::PosixEnv::NewSequentialFile
+            -> 153 leveldb::(anonymous namespace)::PosixSequentialFile::Read probe
+            <- 153 leveldb::(anonymous namespace)::PosixSequentialFile::Read
+            -> 155 leveldb::(anonymous namespace)::PosixSequentialFile::Read probe
+            <- 155 leveldb::(anonymous namespace)::PosixSequentialFile::Read
+            -> 157 leveldb::(anonymous namespace)::PosixSequentialFile::~PosixSequentialFile probe
+              -> 158 ~PosixSequentialFile probe
+              <- 158 ~PosixSequentialFile
+              -> 159 leveldb::SequentialFile::~SequentialFile probe
+              <- 159 leveldb::SequentialFile::~SequentialFile
+            <- 157 leveldb::(anonymous namespace)::PosixSequentialFile::~PosixSequentialFile
+          <- 149 leveldb::ReadFileToString
+          -> 163 leveldb::(anonymous namespace)::PosixEnv::NewSequentialFile probe
+            -> 164 PosixSequentialFile probe
+            <- 164 PosixSequentialFile
+          <- 163 leveldb::(anonymous namespace)::PosixEnv::NewSequentialFile
+          -> 166 Builder probe
+          <- 166 Builder
+          -> 167 LevelState probe
+          <- 167 LevelState
+          -> 168 Ref probe
+          <- 168 Ref
+          -> 169 leveldb::log::Reader::Reader probe
+          <- 169 leveldb::log::Reader::Reader
+          -> 171 leveldb::log::Reader::ReadRecord probe
+            -> 172 ReadPhysicalRecord probe
+            <- 172 ReadPhysicalRecord
+            -> 173 leveldb::(anonymous namespace)::PosixSequentialFile::Read probe
+            <- 173 leveldb::(anonymous namespace)::PosixSequentialFile::Read
+            -> 175 leveldb::crc32c::Extend probe
+              -> 176 RoundUp\<4\> probe
+              <- 176 RoundUp\<4\>
+            <- 175 leveldb::crc32c::Extend
+          <- 171 leveldb::log::Reader::ReadRecord
+          -> 179 leveldb::VersionEdit::Clear probe
+          <- 179 leveldb::VersionEdit::Clear
+          -> 181 leveldb::VersionEdit::DecodeFrom probe
+            -> 182 leveldb::VersionEdit::Clear probe
+            <- 182 leveldb::VersionEdit::Clear
+            -> 184 leveldb::GetVarint32 probe
+            <- 184 leveldb::GetVarint32
+            -> 186 leveldb::GetLengthPrefixedSlice probe
+              -> 187 GetVarint32 probe
+              <- 187 GetVarint32
+            <- 186 leveldb::GetLengthPrefixedSlice
+            -> 189 leveldb::GetVarint32 probe
+            <- 189 leveldb::GetVarint32
+            -> 191 GetLevel probe
+            <- 191 GetLevel
+            -> 192 leveldb::GetVarint32 probe
+            <- 192 leveldb::GetVarint32
+            -> 194 leveldb::GetVarint64 probe
+              -> 195 GetVarint64Ptr probe
+              <- 195 GetVarint64Ptr
+            <- 194 leveldb::GetVarint64
+            -> 197 leveldb::GetVarint64 probe
+              -> 198 GetVarint64Ptr probe
+              <- 198 GetVarint64Ptr
+            <- 197 leveldb::GetVarint64
+            -> 200 GetInternalKey probe
+            <- 200 GetInternalKey
+            -> 201 leveldb::GetLengthPrefixedSlice probe
+              -> 202 GetVarint32 probe
+              <- 202 GetVarint32
+            <- 201 leveldb::GetLengthPrefixedSlice
+            -> 204 GetInternalKey probe
+            <- 204 GetInternalKey
+            -> 205 leveldb::GetLengthPrefixedSlice probe
+              -> 206 GetVarint32 probe
+              <- 206 GetVarint32
+            <- 205 leveldb::GetLengthPrefixedSlice
+            -> 208 leveldb::GetVarint32 probe
+            <- 208 leveldb::GetVarint32
+          <- 181 leveldb::VersionEdit::DecodeFrom
+          -> 211 leveldb::(anonymous namespace)::BytewiseComparatorImpl::Name probe
+          <- 211 leveldb::(anonymous namespace)::BytewiseComparatorImpl::Name
+          -> 213 leveldb::VersionSet::Builder::Apply probe
+          <- 213 leveldb::VersionSet::Builder::Apply
+          -> 215 leveldb::log::Reader::ReadRecord probe
+            -> 216 ReadPhysicalRecord probe
+            <- 216 ReadPhysicalRecord
+            -> 217 leveldb::crc32c::Extend probe
+              -> 218 RoundUp\<4\> probe
+              <- 218 RoundUp\<4\>
+            <- 217 leveldb::crc32c::Extend
+          <- 215 leveldb::log::Reader::ReadRecord
+          -> 221 leveldb::VersionEdit::Clear probe
+          <- 221 leveldb::VersionEdit::Clear
+          -> 223 leveldb::VersionEdit::DecodeFrom probe
+            -> 224 leveldb::VersionEdit::Clear probe
+            <- 224 leveldb::VersionEdit::Clear
+            -> 226 leveldb::GetVarint32 probe
+            <- 226 leveldb::GetVarint32
+            -> 228 leveldb::GetVarint64 probe
+              -> 229 GetVarint64Ptr probe
+              <- 229 GetVarint64Ptr
+            <- 228 leveldb::GetVarint64
+            -> 231 leveldb::GetVarint32 probe
+            <- 231 leveldb::GetVarint32
+            -> 233 leveldb::GetVarint64 probe
+              -> 234 GetVarint64Ptr probe
+              <- 234 GetVarint64Ptr
+            <- 233 leveldb::GetVarint64
+            -> 236 leveldb::GetVarint32 probe
+            <- 236 leveldb::GetVarint32
+            -> 238 leveldb::GetVarint64 probe
+              -> 239 GetVarint64Ptr probe
+              <- 239 GetVarint64Ptr
+            <- 238 leveldb::GetVarint64
+            -> 241 leveldb::GetVarint32 probe
+            <- 241 leveldb::GetVarint32
+            -> 243 leveldb::GetVarint64 probe
+              -> 244 GetVarint64Ptr probe
+              <- 244 GetVarint64Ptr
+            <- 243 leveldb::GetVarint64
+            -> 246 leveldb::GetVarint32 probe
+            <- 246 leveldb::GetVarint32
+            -> 248 GetLevel probe
+            <- 248 GetLevel
+            -> 249 leveldb::GetVarint32 probe
+            <- 249 leveldb::GetVarint32
+            -> 251 leveldb::GetVarint64 probe
+              -> 252 GetVarint64Ptr probe
+              <- 252 GetVarint64Ptr
+            <- 251 leveldb::GetVarint64
+            -> 254 leveldb::GetVarint64 probe
+              -> 255 GetVarint64Ptr probe
+              <- 255 GetVarint64Ptr
+            <- 254 leveldb::GetVarint64
+            -> 257 GetInternalKey probe
+            <- 257 GetInternalKey
+            -> 258 leveldb::GetLengthPrefixedSlice probe
+              -> 259 GetVarint32 probe
+              <- 259 GetVarint32
+            <- 258 leveldb::GetLengthPrefixedSlice
+            -> 261 GetInternalKey probe
+            <- 261 GetInternalKey
+            -> 262 leveldb::GetLengthPrefixedSlice probe
+              -> 263 GetVarint32 probe
+              <- 263 GetVarint32
+            <- 262 leveldb::GetLengthPrefixedSlice
+            -> 265 leveldb::GetVarint32 probe
+            <- 265 leveldb::GetVarint32
+          <- 223 leveldb::VersionEdit::DecodeFrom
+          -> 268 leveldb::VersionSet::Builder::Apply probe
+            -> 269 operator probe
+            <- 269 operator
+            -> 270 leveldb::InternalKeyComparator::Compare probe
+              -> 271 leveldb::(anonymous namespace)::BytewiseComparatorImpl::Compare probe
+              <- 271 leveldb::(anonymous namespace)::BytewiseComparatorImpl::Compare
+              -> 273 Compare probe
+              <- 273 Compare
+            <- 270 leveldb::InternalKeyComparator::Compare
+            -> 275 operator probe
+            <- 275 operator
+            -> 276 leveldb::InternalKeyComparator::Compare probe
+              -> 277 leveldb::(anonymous namespace)::BytewiseComparatorImpl::Compare probe
+              <- 277 leveldb::(anonymous namespace)::BytewiseComparatorImpl::Compare
+              -> 279 Compare probe
+              <- 279 Compare
+            <- 276 leveldb::InternalKeyComparator::Compare
+          <- 268 leveldb::VersionSet::Builder::Apply
+          -> 282 leveldb::log::Reader::ReadRecord probe
+            -> 283 ReadPhysicalRecord probe
+            <- 283 ReadPhysicalRecord
+          <- 282 leveldb::log::Reader::ReadRecord
+          -> 285 leveldb::log::Reader::~Reader probe
+          <- 285 leveldb::log::Reader::~Reader
+          -> 287 leveldb::log::Reader::Reporter::~Reporter probe
+          <- 287 leveldb::log::Reader::Reporter::~Reporter
+          -> 289 leveldb::(anonymous namespace)::PosixSequentialFile::~PosixSequentialFile probe
+            -> 290 ~PosixSequentialFile probe
+            <- 290 ~PosixSequentialFile
+            -> 291 leveldb::SequentialFile::~SequentialFile probe
+            <- 291 leveldb::SequentialFile::~SequentialFile
+          <- 289 leveldb::(anonymous namespace)::PosixSequentialFile::~PosixSequentialFile
+          -> 294 MarkFileNumberUsed probe
+          <- 294 MarkFileNumberUsed
+          -> 295 MarkFileNumberUsed probe
+          <- 295 MarkFileNumberUsed
+          -> 296 SaveTo probe
+          <- 296 SaveTo
+          -> 297 MaybeAddFile probe
+          <- 297 MaybeAddFile
+          -> 298 MaybeAddFile probe
+          <- 298 MaybeAddFile
+          -> 299 Finalize probe
+          <- 299 Finalize
+          -> 300 TotalFileSize probe
+          <- 300 TotalFileSize
+          -> 301 MaxBytesForLevel probe
+          <- 301 MaxBytesForLevel
+          -> 302 TotalFileSize probe
+          <- 302 TotalFileSize
+          -> 303 MaxBytesForLevel probe
+          <- 303 MaxBytesForLevel
+          -> 304 TotalFileSize probe
+          <- 304 TotalFileSize
+          -> 305 MaxBytesForLevel probe
+          <- 305 MaxBytesForLevel
+          -> 306 TotalFileSize probe
+          <- 306 TotalFileSize
+          -> 307 MaxBytesForLevel probe
+          <- 307 MaxBytesForLevel
+          -> 308 TotalFileSize probe
+          <- 308 TotalFileSize
+          -> 309 MaxBytesForLevel probe
+          <- 309 MaxBytesForLevel
+          -> 310 AppendVersion probe
+          <- 310 AppendVersion
+          -> 311 Unref probe
+          <- 311 Unref
+          -> 312 Ref probe
+          <- 312 Ref
+          -> 313 leveldb::VersionSet::ReuseManifest probe
+          <- 313 leveldb::VersionSet::ReuseManifest
+          -> 315 ~Builder probe
+          <- 315 ~Builder
+          -> 316 Unref probe
+          <- 316 Unref
+          -> 317 Unref probe
+          <- 317 Unref
+          -> 318 leveldb::Version::~Version probe
+          <- 318 leveldb::Version::~Version
+          -> 320 ~LevelState probe
+          <- 320 ~LevelState
+          -> 321 ~LevelState probe
+          <- 321 ~LevelState
+          -> 322 ~LevelState probe
+          <- 322 ~LevelState
+          -> 323 ~LevelState probe
+          <- 323 ~LevelState
+          -> 324 ~LevelState probe
+          <- 324 ~LevelState
+          -> 325 ~LevelState probe
+          <- 325 ~LevelState
+          -> 326 ~LevelState probe
+          <- 326 ~LevelState
+        <- 146 leveldb::VersionSet::Recover
+        -> 328 leveldb::(anonymous namespace)::PosixEnv::GetChildren probe
+        <- 328 leveldb::(anonymous namespace)::PosixEnv::GetChildren
+        -> 330 leveldb::VersionSet::AddLiveFiles probe
+        <- 330 leveldb::VersionSet::AddLiveFiles
+        -> 332 leveldb::ParseFileName probe
+        <- 332 leveldb::ParseFileName
+        -> 334 leveldb::ParseFileName probe
+          -> 335 leveldb::ConsumeDecimalNumber probe
+          <- 335 leveldb::ConsumeDecimalNumber
+        <- 334 leveldb::ParseFileName
+        -> 338 leveldb::ParseFileName probe
+        <- 338 leveldb::ParseFileName
+        -> 340 leveldb::ParseFileName probe
+          -> 341 leveldb::ConsumeDecimalNumber probe
+          <- 341 leveldb::ConsumeDecimalNumber
+        <- 340 leveldb::ParseFileName
+        -> 344 leveldb::ParseFileName probe
+        <- 344 leveldb::ParseFileName
+        -> 346 leveldb::ParseFileName probe
+          -> 347 leveldb::ConsumeDecimalNumber probe
+          <- 347 leveldb::ConsumeDecimalNumber
+        <- 346 leveldb::ParseFileName
+        -> 350 leveldb::ParseFileName probe
+          -> 351 leveldb::ConsumeDecimalNumber probe
+          <- 351 leveldb::ConsumeDecimalNumber
+        <- 350 leveldb::ParseFileName
+        -> 354 leveldb::ParseFileName probe
+          -> 355 leveldb::ConsumeDecimalNumber probe
+          <- 355 leveldb::ConsumeDecimalNumber
+        <- 354 leveldb::ParseFileName
+        -> 358 leveldb::ParseFileName probe
+        <- 358 leveldb::ParseFileName
+        -> 360 leveldb::ParseFileName probe
+          -> 361 leveldb::ConsumeDecimalNumber probe
+          <- 361 leveldb::ConsumeDecimalNumber
+        <- 360 leveldb::ParseFileName
+        -> 364 leveldb::DBImpl::RecoverLogFile probe
+          -> 365 leveldb::LogFileName probe
+            -> 366 MakeFileName probe
+            <- 366 MakeFileName
+          <- 365 leveldb::LogFileName
+          -> 368 leveldb::(anonymous namespace)::PosixEnv::NewSequentialFile probe
+            -> 369 PosixSequentialFile probe
+            <- 369 PosixSequentialFile
+          <- 368 leveldb::(anonymous namespace)::PosixEnv::NewSequentialFile
+          -> 371 leveldb::log::Reader::Reader probe
+          <- 371 leveldb::log::Reader::Reader
+          -> 373 leveldb::Log probe
+          <- 373 leveldb::Log
+          -> 375 leveldb::WriteBatch::WriteBatch probe
+            -> 376 leveldb::WriteBatch::WriteBatch probe
+              -> 377 leveldb::WriteBatch::Clear probe
+              <- 377 leveldb::WriteBatch::Clear
+            <- 376 leveldb::WriteBatch::WriteBatch
+          <- 375 leveldb::WriteBatch::WriteBatch
+          -> 381 leveldb::log::Reader::ReadRecord probe
+            -> 382 ReadPhysicalRecord probe
+            <- 382 ReadPhysicalRecord
+            -> 383 leveldb::(anonymous namespace)::PosixSequentialFile::Read probe
+            <- 383 leveldb::(anonymous namespace)::PosixSequentialFile::Read
+            -> 385 leveldb::crc32c::Extend probe
+              -> 386 RoundUp\<4\> probe
+              <- 386 RoundUp\<4\>
+            <- 385 leveldb::crc32c::Extend
+          <- 381 leveldb::log::Reader::ReadRecord
+          -> 389 leveldb::WriteBatchInternal::SetContents probe
+          <- 389 leveldb::WriteBatchInternal::SetContents
+          -> 391 leveldb::MemTable::MemTable probe
+            -> 392 leveldb::MemTable::MemTable probe
+              -> 393 leveldb::Arena::Arena probe
+              <- 393 leveldb::Arena::Arena
+              -> 395 leveldb::Arena::AllocateAligned probe
+                -> 396 AllocateFallback probe
+                <- 396 AllocateFallback
+                -> 397 AllocateFallback probe
+                <- 397 AllocateFallback
+                -> 398 AllocateNewBlock probe
+                <- 398 AllocateNewBlock
+              <- 395 leveldb::Arena::AllocateAligned
+              -> 400 leveldb::Comparator::~Comparator probe
+              <- 400 leveldb::Comparator::~Comparator
+            <- 392 leveldb::MemTable::MemTable
+          <- 391 leveldb::MemTable::MemTable
+          -> 404 leveldb::WriteBatchInternal::InsertInto probe
+            -> 405 MemTableInserter probe
+            <- 405 MemTableInserter
+            -> 406 Sequence probe
+            <- 406 Sequence
+            -> 407 leveldb::WriteBatch::Iterate probe
+              -> 408 leveldb::GetLengthPrefixedSlice probe
+                -> 409 GetVarint32 probe
+                <- 409 GetVarint32
+              <- 408 leveldb::GetLengthPrefixedSlice
+              -> 411 leveldb::GetLengthPrefixedSlice probe
+                -> 412 GetVarint32 probe
+                <- 412 GetVarint32
+              <- 411 leveldb::GetLengthPrefixedSlice
+              -> 414 Put probe
+              <- 414 Put
+              -> 415 leveldb::MemTable::Add probe
+                -> 416 leveldb::VarintLength probe
+                <- 416 leveldb::VarintLength
+                -> 418 leveldb::VarintLength probe
+                <- 418 leveldb::VarintLength
+                -> 420 leveldb::EncodeVarint32 probe
+                <- 420 leveldb::EncodeVarint32
+                -> 422 leveldb::EncodeFixed64 probe
+                <- 422 leveldb::EncodeFixed64
+                -> 424 leveldb::EncodeVarint32 probe
+                <- 424 leveldb::EncodeVarint32
+                -> 426 leveldb::Arena::AllocateAligned probe
+                <- 426 leveldb::Arena::AllocateAligned
+              <- 415 leveldb::MemTable::Add
+              -> 429 Count probe
+              <- 429 Count
+            <- 407 leveldb::WriteBatch::Iterate
+            -> 431 ~MemTableInserter probe
+            <- 431 ~MemTableInserter
+            -> 432 leveldb::WriteBatch::Handler::~Handler probe
+            <- 432 leveldb::WriteBatch::Handler::~Handler
+          <- 404 leveldb::WriteBatchInternal::InsertInto
+          -> 435 MaybeIgnoreError probe
+          <- 435 MaybeIgnoreError
+          -> 436 leveldb::WriteBatchInternal::Sequence probe
+          <- 436 leveldb::WriteBatchInternal::Sequence
+          -> 438 leveldb::WriteBatchInternal::Count probe
+          <- 438 leveldb::WriteBatchInternal::Count
+          -> 440 leveldb::MemTable::ApproximateMemoryUsage probe
+          <- 440 leveldb::MemTable::ApproximateMemoryUsage
+          -> 442 leveldb::log::Reader::ReadRecord probe
+            -> 443 ReadPhysicalRecord probe
+            <- 443 ReadPhysicalRecord
+          <- 442 leveldb::log::Reader::ReadRecord
+          -> 445 leveldb::(anonymous namespace)::PosixSequentialFile::~PosixSequentialFile probe
+            -> 446 ~PosixSequentialFile probe
+            <- 446 ~PosixSequentialFile
+            -> 447 leveldb::SequentialFile::~SequentialFile probe
+            <- 447 leveldb::SequentialFile::~SequentialFile
+          <- 445 leveldb::(anonymous namespace)::PosixSequentialFile::~PosixSequentialFile
+          -> 450 leveldb::DBImpl::WriteLevel0Table probe
+            -> 451 leveldb::(anonymous namespace)::PosixEnv::NowMicros probe
+            <- 451 leveldb::(anonymous namespace)::PosixEnv::NowMicros
+            -> 453 leveldb::MemTable::NewIterator probe
+              -> 454 MemTableIterator probe
+              <- 454 MemTableIterator
+              -> 455 leveldb::Iterator::Iterator probe
+              <- 455 leveldb::Iterator::Iterator
+            <- 453 leveldb::MemTable::NewIterator
+            -> 458 leveldb::Log probe
+            <- 458 leveldb::Log
+            -> 460 leveldb::BuildTable probe
+              -> 461 leveldb::MemTableIterator::SeekToFirst probe
+              <- 461 leveldb::MemTableIterator::SeekToFirst
+              -> 463 leveldb::TableFileName probe
+                -> 464 MakeFileName probe
+                <- 464 MakeFileName
+              <- 463 leveldb::TableFileName
+              -> 466 leveldb::MemTableIterator::Valid probe
+              <- 466 leveldb::MemTableIterator::Valid
+              -> 468 leveldb::(anonymous namespace)::PosixEnv::NewWritableFile probe
+                -> 469 PosixWritableFile probe
+                <- 469 PosixWritableFile
+                -> 470 Basename probe
+                <- 470 Basename
+                -> 471 IsManifest probe
+                <- 471 IsManifest
+                -> 472 Dirname probe
+                <- 472 Dirname
+              <- 468 leveldb::(anonymous namespace)::PosixEnv::NewWritableFile
+              -> 474 leveldb::TableBuilder::TableBuilder probe
+                -> 475 leveldb::TableBuilder::TableBuilder probe
+                  -> 476 Rep probe
+                  <- 476 Rep
+                  -> 477 leveldb::BlockBuilder::BlockBuilder probe
+                    -> 478 leveldb::BlockBuilder::BlockBuilder probe
+                    <- 478 leveldb::BlockBuilder::BlockBuilder
+                  <- 477 leveldb::BlockBuilder::BlockBuilder
+                  -> 481 leveldb::BlockBuilder::BlockBuilder probe
+                    -> 482 leveldb::BlockBuilder::BlockBuilder probe
+                    <- 482 leveldb::BlockBuilder::BlockBuilder
+                  <- 481 leveldb::BlockBuilder::BlockBuilder
+                <- 475 leveldb::TableBuilder::TableBuilder
+              <- 474 leveldb::TableBuilder::TableBuilder
+              -> 487 leveldb::MemTableIterator::key probe
+                -> 488 GetLengthPrefixedSlice probe
+                <- 488 GetLengthPrefixedSlice
+              <- 487 leveldb::MemTableIterator::key
+              -> 490 leveldb::MemTableIterator::Valid probe
+              <- 490 leveldb::MemTableIterator::Valid
+              -> 492 leveldb::MemTableIterator::key probe
+                -> 493 GetLengthPrefixedSlice probe
+                <- 493 GetLengthPrefixedSlice
+              <- 492 leveldb::MemTableIterator::key
+              -> 495 leveldb::MemTableIterator::value probe
+                -> 496 GetLengthPrefixedSlice probe
+                <- 496 GetLengthPrefixedSlice
+                -> 497 GetLengthPrefixedSlice probe
+                <- 497 GetLengthPrefixedSlice
+              <- 495 leveldb::MemTableIterator::value
+              -> 499 leveldb::TableBuilder::Add probe
+                -> 500 leveldb::TableBuilder::status probe
+                <- 500 leveldb::TableBuilder::status
+                -> 502 leveldb::BlockBuilder::Add probe
+                  -> 503 leveldb::PutVarint32 probe
+                    -> 504 EncodeVarint32 probe
+                    <- 504 EncodeVarint32
+                  <- 503 leveldb::PutVarint32
+                  -> 506 leveldb::PutVarint32 probe
+                    -> 507 EncodeVarint32 probe
+                    <- 507 EncodeVarint32
+                  <- 506 leveldb::PutVarint32
+                  -> 509 leveldb::PutVarint32 probe
+                    -> 510 EncodeVarint32 probe
+                    <- 510 EncodeVarint32
+                  <- 509 leveldb::PutVarint32
+                <- 502 leveldb::BlockBuilder::Add
+                -> 513 leveldb::BlockBuilder::CurrentSizeEstimate probe
+                <- 513 leveldb::BlockBuilder::CurrentSizeEstimate
+              <- 499 leveldb::TableBuilder::Add
+              -> 516 leveldb::MemTableIterator::Next probe
+              <- 516 leveldb::MemTableIterator::Next
+              -> 518 leveldb::MemTableIterator::Valid probe
+              <- 518 leveldb::MemTableIterator::Valid
+              -> 520 leveldb::TableBuilder::Finish probe
+                -> 521 leveldb::TableBuilder::Flush probe
+                  -> 522 leveldb::TableBuilder::status probe
+                  <- 522 leveldb::TableBuilder::status
+                  -> 524 leveldb::TableBuilder::WriteBlock probe
+                    -> 525 leveldb::BlockBuilder::Finish probe
+                      -> 526 leveldb::PutFixed32 probe
+                        -> 527 EncodeFixed32 probe
+                        <- 527 EncodeFixed32
+                      <- 526 leveldb::PutFixed32
+                      -> 529 leveldb::PutFixed32 probe
+                        -> 530 EncodeFixed32 probe
+                        <- 530 EncodeFixed32
+                      <- 529 leveldb::PutFixed32
+                    <- 525 leveldb::BlockBuilder::Finish
+                    -> 533 leveldb::TableBuilder::WriteRawBlock probe
+                      -> 534 leveldb::(anonymous namespace)::PosixWritableFile::Append probe
+                      <- 534 leveldb::(anonymous namespace)::PosixWritableFile::Append
+                      -> 536 leveldb::crc32c::Extend probe
+                        -> 537 RoundUp\<4\> probe
+                        <- 537 RoundUp\<4\>
+                      <- 536 leveldb::crc32c::Extend
+                      -> 539 leveldb::crc32c::Extend probe
+                        -> 540 RoundUp\<4\> probe
+                        <- 540 RoundUp\<4\>
+                      <- 539 leveldb::crc32c::Extend
+                      -> 542 leveldb::EncodeFixed32 probe
+                      <- 542 leveldb::EncodeFixed32
+                      -> 544 leveldb::(anonymous namespace)::PosixWritableFile::Append probe
+                      <- 544 leveldb::(anonymous namespace)::PosixWritableFile::Append
+                    <- 533 leveldb::TableBuilder::WriteRawBlock
+                    -> 547 leveldb::BlockBuilder::Reset probe
+                    <- 547 leveldb::BlockBuilder::Reset
+                  <- 524 leveldb::TableBuilder::WriteBlock
+                  -> 550 leveldb::TableBuilder::status probe
+                  <- 550 leveldb::TableBuilder::status
+                  -> 552 leveldb::(anonymous namespace)::PosixWritableFile::Flush probe
+                    -> 553 FlushBuffer probe
+                    <- 553 FlushBuffer
+                    -> 554 WriteUnbuffered probe
+                    <- 554 WriteUnbuffered
+                  <- 552 leveldb::(anonymous namespace)::PosixWritableFile::Flush
+                <- 521 leveldb::TableBuilder::Flush
+                -> 557 leveldb::TableBuilder::status probe
+                <- 557 leveldb::TableBuilder::status
+                -> 559 leveldb::TableBuilder::status probe
+                <- 559 leveldb::TableBuilder::status
+                -> 561 leveldb::BlockBuilder::BlockBuilder probe
+                  -> 562 leveldb::BlockBuilder::BlockBuilder probe
+                  <- 562 leveldb::BlockBuilder::BlockBuilder
+                <- 561 leveldb::BlockBuilder::BlockBuilder
+                -> 565 leveldb::TableBuilder::WriteBlock probe
+                  -> 566 leveldb::BlockBuilder::Finish probe
+                    -> 567 leveldb::PutFixed32 probe
+                      -> 568 EncodeFixed32 probe
+                      <- 568 EncodeFixed32
+                    <- 567 leveldb::PutFixed32
+                    -> 570 leveldb::PutFixed32 probe
+                      -> 571 EncodeFixed32 probe
+                      <- 571 EncodeFixed32
+                    <- 570 leveldb::PutFixed32
+                  <- 566 leveldb::BlockBuilder::Finish
+                  -> 574 leveldb::TableBuilder::WriteRawBlock probe
+                    -> 575 leveldb::(anonymous namespace)::PosixWritableFile::Append probe
+                    <- 575 leveldb::(anonymous namespace)::PosixWritableFile::Append
+                    -> 577 leveldb::crc32c::Extend probe
+                      -> 578 RoundUp\<4\> probe
+                      <- 578 RoundUp\<4\>
+                    <- 577 leveldb::crc32c::Extend
+                    -> 580 leveldb::crc32c::Extend probe
+                      -> 581 RoundUp\<4\> probe
+                      <- 581 RoundUp\<4\>
+                    <- 580 leveldb::crc32c::Extend
+                    -> 583 leveldb::EncodeFixed32 probe
+                    <- 583 leveldb::EncodeFixed32
+                    -> 585 leveldb::(anonymous namespace)::PosixWritableFile::Append probe
+                    <- 585 leveldb::(anonymous namespace)::PosixWritableFile::Append
+                  <- 574 leveldb::TableBuilder::WriteRawBlock
+                  -> 588 leveldb::BlockBuilder::Reset probe
+                  <- 588 leveldb::BlockBuilder::Reset
+                <- 565 leveldb::TableBuilder::WriteBlock
+                -> 591 leveldb::TableBuilder::status probe
+                <- 591 leveldb::TableBuilder::status
+                -> 593 leveldb::InternalKeyComparator::FindShortSuccessor probe
+                  -> 594 leveldb::(anonymous namespace)::BytewiseComparatorImpl::FindShortSuccessor probe
+                  <- 594 leveldb::(anonymous namespace)::BytewiseComparatorImpl::FindShortSuccessor
+                  -> 596 leveldb::(anonymous namespace)::BytewiseComparatorImpl::Compare probe
+                  <- 596 leveldb::(anonymous namespace)::BytewiseComparatorImpl::Compare
+                  -> 598 leveldb::PutFixed64 probe
+                    -> 599 EncodeFixed64 probe
+                    <- 599 EncodeFixed64
+                  <- 598 leveldb::PutFixed64
+                <- 593 leveldb::InternalKeyComparator::FindShortSuccessor
+                -> 602 leveldb::BlockHandle::EncodeTo probe
+                  -> 603 leveldb::PutVarint64 probe
+                    -> 604 EncodeVarint64 probe
+                    <- 604 EncodeVarint64
+                  <- 603 leveldb::PutVarint64
+                  -> 606 leveldb::PutVarint64 probe
+                    -> 607 EncodeVarint64 probe
+                    <- 607 EncodeVarint64
+                  <- 606 leveldb::PutVarint64
+                <- 602 leveldb::BlockHandle::EncodeTo
+                -> 610 leveldb::BlockBuilder::Add probe
+                  -> 611 leveldb::PutVarint32 probe
+                    -> 612 EncodeVarint32 probe
+                    <- 612 EncodeVarint32
+                  <- 611 leveldb::PutVarint32
+                  -> 614 leveldb::PutVarint32 probe
+                    -> 615 EncodeVarint32 probe
+                    <- 615 EncodeVarint32
+                  <- 614 leveldb::PutVarint32
+                  -> 617 leveldb::PutVarint32 probe
+                    -> 618 EncodeVarint32 probe
+                    <- 618 EncodeVarint32
+                  <- 617 leveldb::PutVarint32
+                <- 610 leveldb::BlockBuilder::Add
+                -> 621 leveldb::TableBuilder::WriteBlock probe
+                  -> 622 leveldb::BlockBuilder::Finish probe
+                    -> 623 leveldb::PutFixed32 probe
+                      -> 624 EncodeFixed32 probe
+                      <- 624 EncodeFixed32
+                    <- 623 leveldb::PutFixed32
+                    -> 626 leveldb::PutFixed32 probe
+                      -> 627 EncodeFixed32 probe
+                      <- 627 EncodeFixed32
+                    <- 626 leveldb::PutFixed32
+                  <- 622 leveldb::BlockBuilder::Finish
+                  -> 630 leveldb::TableBuilder::WriteRawBlock probe
+                    -> 631 leveldb::(anonymous namespace)::PosixWritableFile::Append probe
+                    <- 631 leveldb::(anonymous namespace)::PosixWritableFile::Append
+                    -> 633 leveldb::crc32c::Extend probe
+                      -> 634 RoundUp\<4\> probe
+                      <- 634 RoundUp\<4\>
+                    <- 633 leveldb::crc32c::Extend
+                    -> 636 leveldb::crc32c::Extend probe
+                      -> 637 RoundUp\<4\> probe
+                      <- 637 RoundUp\<4\>
+                    <- 636 leveldb::crc32c::Extend
+                    -> 639 leveldb::EncodeFixed32 probe
+                    <- 639 leveldb::EncodeFixed32
+                    -> 641 leveldb::(anonymous namespace)::PosixWritableFile::Append probe
+                    <- 641 leveldb::(anonymous namespace)::PosixWritableFile::Append
+                  <- 630 leveldb::TableBuilder::WriteRawBlock
+                  -> 644 leveldb::BlockBuilder::Reset probe
+                  <- 644 leveldb::BlockBuilder::Reset
+                <- 621 leveldb::TableBuilder::WriteBlock
+                -> 647 leveldb::TableBuilder::status probe
+                <- 647 leveldb::TableBuilder::status
+                -> 649 leveldb::Footer::EncodeTo probe
+                  -> 650 EncodeTo probe
+                  <- 650 EncodeTo
+                  -> 651 leveldb::PutVarint64 probe
+                    -> 652 EncodeVarint64 probe
+                    <- 652 EncodeVarint64
+                  <- 651 leveldb::PutVarint64
+                  -> 654 leveldb::PutVarint64 probe
+                    -> 655 EncodeVarint64 probe
+                    <- 655 EncodeVarint64
+                  <- 654 leveldb::PutVarint64
+                  -> 657 EncodeTo probe
+                  <- 657 EncodeTo
+                  -> 658 leveldb::PutVarint64 probe
+                    -> 659 EncodeVarint64 probe
+                    <- 659 EncodeVarint64
+                  <- 658 leveldb::PutVarint64
+                  -> 661 leveldb::PutVarint64 probe
+                    -> 662 EncodeVarint64 probe
+                    <- 662 EncodeVarint64
+                  <- 661 leveldb::PutVarint64
+                  -> 664 leveldb::PutFixed32 probe
+                    -> 665 EncodeFixed32 probe
+                    <- 665 EncodeFixed32
+                  <- 664 leveldb::PutFixed32
+                  -> 667 leveldb::PutFixed32 probe
+                    -> 668 EncodeFixed32 probe
+                    <- 668 EncodeFixed32
+                  <- 667 leveldb::PutFixed32
+                <- 649 leveldb::Footer::EncodeTo
+                -> 671 leveldb::(anonymous namespace)::PosixWritableFile::Append probe
+                <- 671 leveldb::(anonymous namespace)::PosixWritableFile::Append
+              <- 520 leveldb::TableBuilder::Finish
+              -> 674 leveldb::TableBuilder::FileSize probe
+              <- 674 leveldb::TableBuilder::FileSize
+              -> 676 leveldb::TableBuilder::~TableBuilder probe
+                -> 677 ~Rep probe
+                <- 677 ~Rep
+              <- 676 leveldb::TableBuilder::~TableBuilder
+              -> 679 leveldb::(anonymous namespace)::PosixWritableFile::Sync probe
+                -> 680 SyncDirIfManifest probe
+                <- 680 SyncDirIfManifest
+                -> 681 FlushBuffer probe
+                <- 681 FlushBuffer
+                -> 682 WriteUnbuffered probe
+                <- 682 WriteUnbuffered
+                -> 683 SyncFd probe
+                <- 683 SyncFd
+              <- 679 leveldb::(anonymous namespace)::PosixWritableFile::Sync
+              -> 685 leveldb::(anonymous namespace)::PosixWritableFile::Close probe
+                -> 686 FlushBuffer probe
+                <- 686 FlushBuffer
+                -> 687 WriteUnbuffered probe
+                <- 687 WriteUnbuffered
+              <- 685 leveldb::(anonymous namespace)::PosixWritableFile::Close
+              -> 689 leveldb::(anonymous namespace)::PosixWritableFile::~PosixWritableFile probe
+                -> 690 ~PosixWritableFile probe
+                <- 690 ~PosixWritableFile
+                -> 691 leveldb::WritableFile::~WritableFile probe
+                <- 691 leveldb::WritableFile::~WritableFile
+              <- 689 leveldb::(anonymous namespace)::PosixWritableFile::~PosixWritableFile
+              -> 694 leveldb::TableCache::NewIterator probe
+                -> 695 leveldb::TableCache::FindTable probe
+                  -> 696 leveldb::EncodeFixed64 probe
+                  <- 696 leveldb::EncodeFixed64
+                  -> 698 leveldb::(anonymous namespace)::ShardedLRUCache::Lookup probe
+                    -> 699 HashSlice probe
+                    <- 699 HashSlice
+                    -> 700 leveldb::Hash probe
+                    <- 700 leveldb::Hash
+                    -> 702 Shard probe
+                    <- 702 Shard
+                    -> 703 Lookup probe
+                    <- 703 Lookup
+                    -> 704 Lookup probe
+                    <- 704 Lookup
+                    -> 705 FindPointer probe
+                    <- 705 FindPointer
+                  <- 698 leveldb::(anonymous namespace)::ShardedLRUCache::Lookup
+                  -> 707 leveldb::TableFileName probe
+                    -> 708 MakeFileName probe
+                    <- 708 MakeFileName
+                  <- 707 leveldb::TableFileName
+                  -> 710 leveldb::(anonymous namespace)::PosixEnv::NewRandomAccessFile probe
+                    -> 711 Acquire probe
+                    <- 711 Acquire
+                    -> 712 GetFileSize probe
+                    <- 712 GetFileSize
+                    -> 713 PosixMmapReadableFile probe
+                    <- 713 PosixMmapReadableFile
+                  <- 710 leveldb::(anonymous namespace)::PosixEnv::NewRandomAccessFile
+                  -> 715 leveldb::Table::Open probe
+                    -> 716 leveldb::(anonymous namespace)::PosixMmapReadableFile::Read probe
+                    <- 716 leveldb::(anonymous namespace)::PosixMmapReadableFile::Read
+                    -> 718 leveldb::Footer::DecodeFrom probe
+                      -> 719 DecodeFrom probe
+                      <- 719 DecodeFrom
+                      -> 720 leveldb::GetVarint64 probe
+                        -> 721 GetVarint64Ptr probe
+                        <- 721 GetVarint64Ptr
+                      <- 720 leveldb::GetVarint64
+                      -> 723 leveldb::GetVarint64 probe
+                        -> 724 GetVarint64Ptr probe
+                        <- 724 GetVarint64Ptr
+                      <- 723 leveldb::GetVarint64
+                      -> 726 DecodeFrom probe
+                      <- 726 DecodeFrom
+                      -> 727 leveldb::GetVarint64 probe
+                        -> 728 GetVarint64Ptr probe
+                        <- 728 GetVarint64Ptr
+                      <- 727 leveldb::GetVarint64
+                      -> 730 leveldb::GetVarint64 probe
+                        -> 731 GetVarint64Ptr probe
+                        <- 731 GetVarint64Ptr
+                      <- 730 leveldb::GetVarint64
+                    <- 718 leveldb::Footer::DecodeFrom
+                    -> 734 leveldb::ReadBlock probe
+                      -> 735 leveldb::(anonymous namespace)::PosixMmapReadableFile::Read probe
+                      <- 735 leveldb::(anonymous namespace)::PosixMmapReadableFile::Read
+                    <- 734 leveldb::ReadBlock
+                    -> 738 leveldb::Block::Block probe
+                      -> 739 NumRestarts probe
+                      <- 739 NumRestarts
+                      -> 740 NumRestarts probe
+                      <- 740 NumRestarts
+                    <- 738 leveldb::Block::Block
+                    -> 742 Rep probe
+                    <- 742 Rep
+                    -> 743 leveldb::Options::Options probe
+                      -> 744 leveldb::BytewiseComparator probe
+                      <- 744 leveldb::BytewiseComparator
+                      -> 746 leveldb::Env::Default probe
+                        -> 747 env probe
+                        <- 747 env
+                      <- 746 leveldb::Env::Default
+                    <- 743 leveldb::Options::Options
+                    -> 750 leveldb::(anonymous namespace)::ShardedLRUCache::NewId probe
+                    <- 750 leveldb::(anonymous namespace)::ShardedLRUCache::NewId
+                    -> 752 leveldb::Table::ReadMeta probe
+                    <- 752 leveldb::Table::ReadMeta
+                  <- 715 leveldb::Table::Open
+                  -> 755 leveldb::(anonymous namespace)::ShardedLRUCache::Insert(leveldb::Slice const&, void*, unsigned long, void (*) probe
+                    -> 756 HashSlice probe
+                    <- 756 HashSlice
+                    -> 757 leveldb::Hash probe
+                    <- 757 leveldb::Hash
+                    -> 759 Shard probe
+                    <- 759 Shard
+                    -> 760 Insert probe
+                    <- 760 Insert
+                    -> 761 LRU_Append probe
+                    <- 761 LRU_Append
+                    -> 762 key probe
+                    <- 762 key
+                    -> 763 Insert probe
+                    <- 763 Insert
+                    -> 764 FindPointer probe
+                    <- 764 FindPointer
+                  <- 755 leveldb::(anonymous namespace)::ShardedLRUCache::Insert(leveldb::Slice const&, void*, unsigned long, void (*)
+                <- 695 leveldb::TableCache::FindTable
+                -> 767 leveldb::(anonymous namespace)::ShardedLRUCache::Value probe
+                <- 767 leveldb::(anonymous namespace)::ShardedLRUCache::Value
+                -> 769 leveldb::Table::NewIterator probe
+                  -> 770 leveldb::Block::NewIterator probe
+                    -> 771 NumRestarts probe
+                    <- 771 NumRestarts
+                    -> 772 Iter probe
+                    <- 772 Iter
+                    -> 773 leveldb::Iterator::Iterator probe
+                    <- 773 leveldb::Iterator::Iterator
+                  <- 770 leveldb::Block::NewIterator
+                  -> 776 leveldb::NewTwoLevelIterator(leveldb::Iterator*, leveldb::Iterator* (*) probe
+                    -> 777 leveldb::Iterator::Iterator probe
+                    <- 777 leveldb::Iterator::Iterator
+                    -> 779 leveldb::Block::Iter::Valid probe
+                    <- 779 leveldb::Block::Iter::Valid
+                  <- 776 leveldb::NewTwoLevelIterator(leveldb::Iterator*, leveldb::Iterator* (*)
+                <- 769 leveldb::Table::NewIterator
+                -> 783 leveldb::Iterator::RegisterCleanup(void (*) probe
+                <- 783 leveldb::Iterator::RegisterCleanup(void (*)
+              <- 694 leveldb::TableCache::NewIterator
+              -> 786 leveldb::(anonymous namespace)::TwoLevelIterator::status probe
+                -> 787 leveldb::Block::Iter::status probe
+                <- 787 leveldb::Block::Iter::status
+              <- 786 leveldb::(anonymous namespace)::TwoLevelIterator::status
+              -> 790 leveldb::(anonymous namespace)::TwoLevelIterator::~TwoLevelIterator probe
+                -> 791 leveldb::Block::Iter::~Iter probe
+                  -> 792 ~Iter probe
+                  <- 792 ~Iter
+                  -> 793 leveldb::Iterator::~Iterator probe
+                  <- 793 leveldb::Iterator::~Iterator
+                <- 791 leveldb::Block::Iter::~Iter
+                -> 796 leveldb::Iterator::~Iterator probe
+                  -> 797 leveldb::UnrefEntry probe
+                    -> 798 leveldb::(anonymous namespace)::ShardedLRUCache::Release probe
+                      -> 799 Shard probe
+                      <- 799 Shard
+                      -> 800 Release probe
+                      <- 800 Release
+                      -> 801 Unref probe
+                      <- 801 Unref
+                      -> 802 Unref probe
+                      <- 802 Unref
+                      -> 803 LRU_Remove probe
+                      <- 803 LRU_Remove
+                      -> 804 LRU_Append probe
+                      <- 804 LRU_Append
+                    <- 798 leveldb::(anonymous namespace)::ShardedLRUCache::Release
+                  <- 797 leveldb::UnrefEntry
+                <- 796 leveldb::Iterator::~Iterator
+              <- 790 leveldb::(anonymous namespace)::TwoLevelIterator::~TwoLevelIterator
+              -> 809 leveldb::MemTableIterator::status probe
+              <- 809 leveldb::MemTableIterator::status
+            <- 460 leveldb::BuildTable
+            -> 812 leveldb::Status::ToString[abi:cxx11] probe
+            <- 812 leveldb::Status::ToString[abi:cxx11]
+            -> 814 leveldb::Log probe
+            <- 814 leveldb::Log
+            -> 816 leveldb::MemTableIterator::~MemTableIterator probe
+              -> 817 ~MemTableIterator probe
+              <- 817 ~MemTableIterator
+              -> 818 leveldb::Iterator::~Iterator probe
+              <- 818 leveldb::Iterator::~Iterator
+            <- 816 leveldb::MemTableIterator::~MemTableIterator
+            -> 821 leveldb::(anonymous namespace)::PosixEnv::NowMicros probe
+            <- 821 leveldb::(anonymous namespace)::PosixEnv::NowMicros
+          <- 450 leveldb::DBImpl::WriteLevel0Table
+          -> 824 leveldb::MemTable::~MemTable probe
+            -> 825 leveldb::Comparator::~Comparator probe
+            <- 825 leveldb::Comparator::~Comparator
+            -> 827 leveldb::Arena::~Arena probe
+            <- 827 leveldb::Arena::~Arena
+            -> 829 leveldb::Comparator::~Comparator probe
+            <- 829 leveldb::Comparator::~Comparator
+          <- 824 leveldb::MemTable::~MemTable
+          -> 832 leveldb::WriteBatch::~WriteBatch probe
+          <- 832 leveldb::WriteBatch::~WriteBatch
+          -> 834 leveldb::log::Reader::~Reader probe
+          <- 834 leveldb::log::Reader::~Reader
+          -> 836 leveldb::log::Reader::Reporter::~Reporter probe
+          <- 836 leveldb::log::Reader::Reporter::~Reporter
+        <- 364 leveldb::DBImpl::RecoverLogFile
+        -> 839 leveldb::VersionSet::MarkFileNumberUsed probe
+        <- 839 leveldb::VersionSet::MarkFileNumberUsed
+      <- 128 leveldb::DBImpl::Recover
+      -> 842 leveldb::LogFileName probe
+        -> 843 MakeFileName probe
+        <- 843 MakeFileName
+      <- 842 leveldb::LogFileName
+      -> 845 leveldb::(anonymous namespace)::PosixEnv::NewWritableFile probe
+        -> 846 PosixWritableFile probe
+        <- 846 PosixWritableFile
+        -> 847 Basename probe
+        <- 847 Basename
+        -> 848 IsManifest probe
+        <- 848 IsManifest
+        -> 849 Dirname probe
+        <- 849 Dirname
+      <- 845 leveldb::(anonymous namespace)::PosixEnv::NewWritableFile
+      -> 851 leveldb::log::Writer::Writer probe
+        -> 852 InitTypeCrc probe
+        <- 852 InitTypeCrc
+        -> 853 leveldb::crc32c::Extend probe
+          -> 854 RoundUp\<4\> probe
+          <- 854 RoundUp\<4\>
+        <- 853 leveldb::crc32c::Extend
+        -> 856 InitTypeCrc probe
+        <- 856 InitTypeCrc
+        -> 857 leveldb::crc32c::Extend probe
+          -> 858 RoundUp\<4\> probe
+          <- 858 RoundUp\<4\>
+        <- 857 leveldb::crc32c::Extend
+        -> 860 InitTypeCrc probe
+        <- 860 InitTypeCrc
+        -> 861 leveldb::crc32c::Extend probe
+          -> 862 RoundUp\<4\> probe
+          <- 862 RoundUp\<4\>
+        <- 861 leveldb::crc32c::Extend
+        -> 864 InitTypeCrc probe
+        <- 864 InitTypeCrc
+        -> 865 leveldb::crc32c::Extend probe
+          -> 866 RoundUp\<4\> probe
+          <- 866 RoundUp\<4\>
+        <- 865 leveldb::crc32c::Extend
+        -> 868 InitTypeCrc probe
+        <- 868 InitTypeCrc
+        -> 869 leveldb::crc32c::Extend probe
+          -> 870 RoundUp\<4\> probe
+          <- 870 RoundUp\<4\>
+        <- 869 leveldb::crc32c::Extend
+      <- 851 leveldb::log::Writer::Writer
+      -> 873 leveldb::MemTable::MemTable probe
+        -> 874 leveldb::MemTable::MemTable probe
+          -> 875 leveldb::Arena::Arena probe
+          <- 875 leveldb::Arena::Arena
+          -> 877 leveldb::Arena::AllocateAligned probe
+            -> 878 AllocateFallback probe
+            <- 878 AllocateFallback
+            -> 879 AllocateFallback probe
+            <- 879 AllocateFallback
+            -> 880 AllocateNewBlock probe
+            <- 880 AllocateNewBlock
+          <- 877 leveldb::Arena::AllocateAligned
+          -> 882 leveldb::Comparator::~Comparator probe
+          <- 882 leveldb::Comparator::~Comparator
+        <- 874 leveldb::MemTable::MemTable
+      <- 873 leveldb::MemTable::MemTable
+      -> 886 leveldb::VersionSet::LogAndApply probe
+        -> 887 LevelState probe
+        <- 887 LevelState
+        -> 888 Builder probe
+        <- 888 Builder
+        -> 889 Ref probe
+        <- 889 Ref
+        -> 890 leveldb::VersionSet::Builder::Apply probe
+        <- 890 leveldb::VersionSet::Builder::Apply
+        -> 892 SaveTo probe
+        <- 892 SaveTo
+        -> 893 operator probe
+        <- 893 operator
+        -> 894 leveldb::InternalKeyComparator::Compare probe
+          -> 895 leveldb::(anonymous namespace)::BytewiseComparatorImpl::Compare probe
+          <- 895 leveldb::(anonymous namespace)::BytewiseComparatorImpl::Compare
+          -> 897 Compare probe
+          <- 897 Compare
+        <- 894 leveldb::InternalKeyComparator::Compare
+        -> 899 operator probe
+        <- 899 operator
+        -> 900 leveldb::InternalKeyComparator::Compare probe
+          -> 901 leveldb::(anonymous namespace)::BytewiseComparatorImpl::Compare probe
+          <- 901 leveldb::(anonymous namespace)::BytewiseComparatorImpl::Compare
+          -> 903 Compare probe
+          <- 903 Compare
+        <- 900 leveldb::InternalKeyComparator::Compare
+        -> 905 MaybeAddFile probe
+        <- 905 MaybeAddFile
+        -> 906 MaybeAddFile probe
+        <- 906 MaybeAddFile
+        -> 907 MaybeAddFile probe
+        <- 907 MaybeAddFile
+        -> 908 ~Builder probe
+        <- 908 ~Builder
+        -> 909 ~Builder probe
+        <- 909 ~Builder
+        -> 910 ~Builder probe
+        <- 910 ~Builder
+        -> 911 ~Builder probe
+        <- 911 ~Builder
+        -> 912 ~Builder probe
+        <- 912 ~Builder
+        -> 913 ~Builder probe
+        <- 913 ~Builder
+        -> 914 ~Builder probe
+        <- 914 ~Builder
+        -> 915 ~LevelState probe
+        <- 915 ~LevelState
+        -> 916 ~LevelState probe
+        <- 916 ~LevelState
+        -> 917 ~LevelState probe
+        <- 917 ~LevelState
+        -> 918 ~LevelState probe
+        <- 918 ~LevelState
+        -> 919 ~LevelState probe
+        <- 919 ~LevelState
+        -> 920 ~LevelState probe
+        <- 920 ~LevelState
+        -> 921 ~LevelState probe
+        <- 921 ~LevelState
+        -> 922 Finalize probe
+        <- 922 Finalize
+        -> 923 TotalFileSize probe
+        <- 923 TotalFileSize
+        -> 924 MaxBytesForLevel probe
+        <- 924 MaxBytesForLevel
+        -> 925 TotalFileSize probe
+        <- 925 TotalFileSize
+        -> 926 MaxBytesForLevel probe
+        <- 926 MaxBytesForLevel
+        -> 927 TotalFileSize probe
+        <- 927 TotalFileSize
+        -> 928 MaxBytesForLevel probe
+        <- 928 MaxBytesForLevel
+        -> 929 TotalFileSize probe
+        <- 929 TotalFileSize
+        -> 930 MaxBytesForLevel probe
+        <- 930 MaxBytesForLevel
+        -> 931 TotalFileSize probe
+        <- 931 TotalFileSize
+        -> 932 MaxBytesForLevel probe
+        <- 932 MaxBytesForLevel
+        -> 933 leveldb::DescriptorFileName probe
+        <- 933 leveldb::DescriptorFileName
+        -> 935 leveldb::(anonymous namespace)::PosixEnv::NewWritableFile probe
+          -> 936 PosixWritableFile probe
+          <- 936 PosixWritableFile
+          -> 937 Basename probe
+          <- 937 Basename
+          -> 938 IsManifest probe
+          <- 938 IsManifest
+          -> 939 Dirname probe
+          <- 939 Dirname
+        <- 935 leveldb::(anonymous namespace)::PosixEnv::NewWritableFile
+        -> 941 leveldb::log::Writer::Writer probe
+          -> 942 InitTypeCrc probe
+          <- 942 InitTypeCrc
+          -> 943 leveldb::crc32c::Extend probe
+            -> 944 RoundUp\<4\> probe
+            <- 944 RoundUp\<4\>
+          <- 943 leveldb::crc32c::Extend
+          -> 946 InitTypeCrc probe
+          <- 946 InitTypeCrc
+          -> 947 leveldb::crc32c::Extend probe
+            -> 948 RoundUp\<4\> probe
+            <- 948 RoundUp\<4\>
+          <- 947 leveldb::crc32c::Extend
+          -> 950 InitTypeCrc probe
+          <- 950 InitTypeCrc
+          -> 951 leveldb::crc32c::Extend probe
+            -> 952 RoundUp\<4\> probe
+            <- 952 RoundUp\<4\>
+          <- 951 leveldb::crc32c::Extend
+          -> 954 InitTypeCrc probe
+          <- 954 InitTypeCrc
+          -> 955 leveldb::crc32c::Extend probe
+            -> 956 RoundUp\<4\> probe
+            <- 956 RoundUp\<4\>
+          <- 955 leveldb::crc32c::Extend
+          -> 958 InitTypeCrc probe
+          <- 958 InitTypeCrc
+          -> 959 leveldb::crc32c::Extend probe
+            -> 960 RoundUp\<4\> probe
+            <- 960 RoundUp\<4\>
+          <- 959 leveldb::crc32c::Extend
+        <- 941 leveldb::log::Writer::Writer
+        -> 963 leveldb::VersionSet::WriteSnapshot probe
+          -> 964 leveldb::VersionEdit::Clear probe
+          <- 964 leveldb::VersionEdit::Clear
+          -> 966 leveldb::(anonymous namespace)::BytewiseComparatorImpl::Name probe
+          <- 966 leveldb::(anonymous namespace)::BytewiseComparatorImpl::Name
+          -> 968 leveldb::VersionEdit::EncodeTo probe
+            -> 969 leveldb::PutVarint32 probe
+              -> 970 EncodeVarint32 probe
+              <- 970 EncodeVarint32
+            <- 969 leveldb::PutVarint32
+            -> 972 leveldb::PutLengthPrefixedSlice probe
+              -> 973 PutVarint32 probe
+              <- 973 PutVarint32
+              -> 974 EncodeVarint32 probe
+              <- 974 EncodeVarint32
+            <- 972 leveldb::PutLengthPrefixedSlice
+            -> 976 leveldb::PutVarint32 probe
+              -> 977 EncodeVarint32 probe
+              <- 977 EncodeVarint32
+            <- 976 leveldb::PutVarint32
+            -> 979 leveldb::PutVarint32 probe
+              -> 980 EncodeVarint32 probe
+              <- 980 EncodeVarint32
+            <- 979 leveldb::PutVarint32
+            -> 982 leveldb::PutVarint64 probe
+              -> 983 EncodeVarint64 probe
+              <- 983 EncodeVarint64
+            <- 982 leveldb::PutVarint64
+            -> 985 leveldb::PutVarint64 probe
+              -> 986 EncodeVarint64 probe
+              <- 986 EncodeVarint64
+            <- 985 leveldb::PutVarint64
+            -> 988 leveldb::PutLengthPrefixedSlice probe
+              -> 989 PutVarint32 probe
+              <- 989 PutVarint32
+              -> 990 EncodeVarint32 probe
+              <- 990 EncodeVarint32
+            <- 988 leveldb::PutLengthPrefixedSlice
+            -> 992 leveldb::PutLengthPrefixedSlice probe
+              -> 993 PutVarint32 probe
+              <- 993 PutVarint32
+              -> 994 EncodeVarint32 probe
+              <- 994 EncodeVarint32
+            <- 992 leveldb::PutLengthPrefixedSlice
+            -> 996 leveldb::PutVarint32 probe
+              -> 997 EncodeVarint32 probe
+              <- 997 EncodeVarint32
+            <- 996 leveldb::PutVarint32
+            -> 999 leveldb::PutVarint32 probe
+              -> 1000 EncodeVarint32 probe
+              <- 1000 EncodeVarint32
+            <- 999 leveldb::PutVarint32
+            -> 1002 leveldb::PutVarint64 probe
+              -> 1003 EncodeVarint64 probe
+              <- 1003 EncodeVarint64
+            <- 1002 leveldb::PutVarint64
+            -> 1005 leveldb::PutVarint64 probe
+              -> 1006 EncodeVarint64 probe
+              <- 1006 EncodeVarint64
+            <- 1005 leveldb::PutVarint64
+            -> 1008 leveldb::PutLengthPrefixedSlice probe
+              -> 1009 PutVarint32 probe
+              <- 1009 PutVarint32
+              -> 1010 EncodeVarint32 probe
+              <- 1010 EncodeVarint32
+            <- 1008 leveldb::PutLengthPrefixedSlice
+            -> 1012 leveldb::PutLengthPrefixedSlice probe
+              -> 1013 PutVarint32 probe
+              <- 1013 PutVarint32
+              -> 1014 EncodeVarint32 probe
+              <- 1014 EncodeVarint32
+            <- 1012 leveldb::PutLengthPrefixedSlice
+          <- 968 leveldb::VersionEdit::EncodeTo
+          -> 1017 leveldb::log::Writer::AddRecord probe
+            -> 1018 leveldb::log::Writer::EmitPhysicalRecord probe
+              -> 1019 leveldb::crc32c::Extend probe
+                -> 1020 RoundUp\<4\> probe
+                <- 1020 RoundUp\<4\>
+              <- 1019 leveldb::crc32c::Extend
+              -> 1022 leveldb::EncodeFixed32 probe
+              <- 1022 leveldb::EncodeFixed32
+              -> 1024 leveldb::(anonymous namespace)::PosixWritableFile::Append probe
+              <- 1024 leveldb::(anonymous namespace)::PosixWritableFile::Append
+              -> 1026 leveldb::(anonymous namespace)::PosixWritableFile::Append probe
+              <- 1026 leveldb::(anonymous namespace)::PosixWritableFile::Append
+              -> 1028 leveldb::(anonymous namespace)::PosixWritableFile::Flush probe
+                -> 1029 FlushBuffer probe
+                <- 1029 FlushBuffer
+                -> 1030 WriteUnbuffered probe
+                <- 1030 WriteUnbuffered
+              <- 1028 leveldb::(anonymous namespace)::PosixWritableFile::Flush
+            <- 1018 leveldb::log::Writer::EmitPhysicalRecord
+          <- 1017 leveldb::log::Writer::AddRecord
+        <- 963 leveldb::VersionSet::WriteSnapshot
+        -> 1035 leveldb::VersionEdit::EncodeTo probe
+          -> 1036 leveldb::PutVarint32 probe
+            -> 1037 EncodeVarint32 probe
+            <- 1037 EncodeVarint32
+          <- 1036 leveldb::PutVarint32
+          -> 1039 leveldb::PutVarint64 probe
+            -> 1040 EncodeVarint64 probe
+            <- 1040 EncodeVarint64
+          <- 1039 leveldb::PutVarint64
+          -> 1042 leveldb::PutVarint32 probe
+            -> 1043 EncodeVarint32 probe
+            <- 1043 EncodeVarint32
+          <- 1042 leveldb::PutVarint32
+          -> 1045 leveldb::PutVarint64 probe
+            -> 1046 EncodeVarint64 probe
+            <- 1046 EncodeVarint64
+          <- 1045 leveldb::PutVarint64
+          -> 1048 leveldb::PutVarint32 probe
+            -> 1049 EncodeVarint32 probe
+            <- 1049 EncodeVarint32
+          <- 1048 leveldb::PutVarint32
+          -> 1051 leveldb::PutVarint64 probe
+            -> 1052 EncodeVarint64 probe
+            <- 1052 EncodeVarint64
+          <- 1051 leveldb::PutVarint64
+          -> 1054 leveldb::PutVarint32 probe
+            -> 1055 EncodeVarint32 probe
+            <- 1055 EncodeVarint32
+          <- 1054 leveldb::PutVarint32
+          -> 1057 leveldb::PutVarint64 probe
+            -> 1058 EncodeVarint64 probe
+            <- 1058 EncodeVarint64
+          <- 1057 leveldb::PutVarint64
+          -> 1060 leveldb::PutVarint32 probe
+            -> 1061 EncodeVarint32 probe
+            <- 1061 EncodeVarint32
+          <- 1060 leveldb::PutVarint32
+          -> 1063 leveldb::PutVarint32 probe
+            -> 1064 EncodeVarint32 probe
+            <- 1064 EncodeVarint32
+          <- 1063 leveldb::PutVarint32
+          -> 1066 leveldb::PutVarint64 probe
+            -> 1067 EncodeVarint64 probe
+            <- 1067 EncodeVarint64
+          <- 1066 leveldb::PutVarint64
+          -> 1069 leveldb::PutVarint64 probe
+            -> 1070 EncodeVarint64 probe
+            <- 1070 EncodeVarint64
+          <- 1069 leveldb::PutVarint64
+          -> 1072 leveldb::PutLengthPrefixedSlice probe
+            -> 1073 PutVarint32 probe
+            <- 1073 PutVarint32
+            -> 1074 EncodeVarint32 probe
+            <- 1074 EncodeVarint32
+          <- 1072 leveldb::PutLengthPrefixedSlice
+          -> 1076 leveldb::PutLengthPrefixedSlice probe
+            -> 1077 PutVarint32 probe
+            <- 1077 PutVarint32
+            -> 1078 EncodeVarint32 probe
+            <- 1078 EncodeVarint32
+          <- 1076 leveldb::PutLengthPrefixedSlice
+        <- 1035 leveldb::VersionEdit::EncodeTo
+        -> 1081 leveldb::log::Writer::AddRecord probe
+          -> 1082 leveldb::log::Writer::EmitPhysicalRecord probe
+            -> 1083 leveldb::crc32c::Extend probe
+              -> 1084 RoundUp\<4\> probe
+              <- 1084 RoundUp\<4\>
+            <- 1083 leveldb::crc32c::Extend
+            -> 1086 leveldb::EncodeFixed32 probe
+            <- 1086 leveldb::EncodeFixed32
+            -> 1088 leveldb::(anonymous namespace)::PosixWritableFile::Append probe
+            <- 1088 leveldb::(anonymous namespace)::PosixWritableFile::Append
+            -> 1090 leveldb::(anonymous namespace)::PosixWritableFile::Append probe
+            <- 1090 leveldb::(anonymous namespace)::PosixWritableFile::Append
+            -> 1092 leveldb::(anonymous namespace)::PosixWritableFile::Flush probe
+              -> 1093 FlushBuffer probe
+              <- 1093 FlushBuffer
+              -> 1094 WriteUnbuffered probe
+              <- 1094 WriteUnbuffered
+            <- 1092 leveldb::(anonymous namespace)::PosixWritableFile::Flush
+          <- 1082 leveldb::log::Writer::EmitPhysicalRecord
+        <- 1081 leveldb::log::Writer::AddRecord
+        -> 1098 leveldb::(anonymous namespace)::PosixWritableFile::Sync probe
+          -> 1099 SyncDirIfManifest probe
+          <- 1099 SyncDirIfManifest
+          -> 1100 SyncFd probe
+          <- 1100 SyncFd
+          -> 1101 FlushBuffer probe
+          <- 1101 FlushBuffer
+          -> 1102 WriteUnbuffered probe
+          <- 1102 WriteUnbuffered
+          -> 1103 SyncFd probe
+          <- 1103 SyncFd
+        <- 1098 leveldb::(anonymous namespace)::PosixWritableFile::Sync
+        -> 1105 leveldb::SetCurrentFile probe
+          -> 1106 DescriptorFileName probe
+          <- 1106 DescriptorFileName
+          -> 1107 TempFileName probe
+          <- 1107 TempFileName
+          -> 1108 MakeFileName probe
+          <- 1108 MakeFileName
+          -> 1109 leveldb::WriteStringToFileSync probe
+            -> 1110 DoWriteStringToFile probe
+            <- 1110 DoWriteStringToFile
+            -> 1111 leveldb::(anonymous namespace)::PosixEnv::NewWritableFile probe
+              -> 1112 PosixWritableFile probe
+              <- 1112 PosixWritableFile
+              -> 1113 Basename probe
+              <- 1113 Basename
+              -> 1114 IsManifest probe
+              <- 1114 IsManifest
+              -> 1115 Dirname probe
+              <- 1115 Dirname
+            <- 1111 leveldb::(anonymous namespace)::PosixEnv::NewWritableFile
+            -> 1117 leveldb::(anonymous namespace)::PosixWritableFile::Append probe
+            <- 1117 leveldb::(anonymous namespace)::PosixWritableFile::Append
+            -> 1119 leveldb::(anonymous namespace)::PosixWritableFile::Sync probe
+              -> 1120 SyncDirIfManifest probe
+              <- 1120 SyncDirIfManifest
+              -> 1121 FlushBuffer probe
+              <- 1121 FlushBuffer
+              -> 1122 WriteUnbuffered probe
+              <- 1122 WriteUnbuffered
+              -> 1123 SyncFd probe
+              <- 1123 SyncFd
+            <- 1119 leveldb::(anonymous namespace)::PosixWritableFile::Sync
+            -> 1125 leveldb::(anonymous namespace)::PosixWritableFile::Close probe
+              -> 1126 FlushBuffer probe
+              <- 1126 FlushBuffer
+              -> 1127 WriteUnbuffered probe
+              <- 1127 WriteUnbuffered
+            <- 1125 leveldb::(anonymous namespace)::PosixWritableFile::Close
+            -> 1129 leveldb::(anonymous namespace)::PosixWritableFile::~PosixWritableFile probe
+              -> 1130 ~PosixWritableFile probe
+              <- 1130 ~PosixWritableFile
+              -> 1131 leveldb::WritableFile::~WritableFile probe
+              <- 1131 leveldb::WritableFile::~WritableFile
+            <- 1129 leveldb::(anonymous namespace)::PosixWritableFile::~PosixWritableFile
+          <- 1109 leveldb::WriteStringToFileSync
+          -> 1135 CurrentFileName probe
+          <- 1135 CurrentFileName
+          -> 1136 leveldb::(anonymous namespace)::PosixEnv::RenameFile probe
+          <- 1136 leveldb::(anonymous namespace)::PosixEnv::RenameFile
+        <- 1105 leveldb::SetCurrentFile
+        -> 1139 AppendVersion probe
+        <- 1139 AppendVersion
+        -> 1140 Unref probe
+        <- 1140 Unref
+        -> 1141 Unref probe
+        <- 1141 Unref
+        -> 1142 leveldb::Version::~Version probe
+        <- 1142 leveldb::Version::~Version
+        -> 1144 Ref probe
+        <- 1144 Ref
+      <- 886 leveldb::VersionSet::LogAndApply
+      -> 1146 leveldb::DBImpl::DeleteObsoleteFiles probe
+        -> 1147 leveldb::VersionSet::AddLiveFiles probe
+        <- 1147 leveldb::VersionSet::AddLiveFiles
+        -> 1149 leveldb::(anonymous namespace)::PosixEnv::GetChildren probe
+        <- 1149 leveldb::(anonymous namespace)::PosixEnv::GetChildren
+        -> 1151 leveldb::ParseFileName probe
+          -> 1152 leveldb::ConsumeDecimalNumber probe
+          <- 1152 leveldb::ConsumeDecimalNumber
+        <- 1151 leveldb::ParseFileName
+        -> 1155 leveldb::ParseFileName probe
+        <- 1155 leveldb::ParseFileName
+        -> 1157 leveldb::ParseFileName probe
+          -> 1158 leveldb::ConsumeDecimalNumber probe
+          <- 1158 leveldb::ConsumeDecimalNumber
+        <- 1157 leveldb::ParseFileName
+        -> 1161 leveldb::ParseFileName probe
+        <- 1161 leveldb::ParseFileName
+        -> 1163 leveldb::ParseFileName probe
+          -> 1164 leveldb::ConsumeDecimalNumber probe
+          <- 1164 leveldb::ConsumeDecimalNumber
+        <- 1163 leveldb::ParseFileName
+        -> 1167 leveldb::ParseFileName probe
+        <- 1167 leveldb::ParseFileName
+        -> 1169 leveldb::ParseFileName probe
+          -> 1170 leveldb::ConsumeDecimalNumber probe
+          <- 1170 leveldb::ConsumeDecimalNumber
+        <- 1169 leveldb::ParseFileName
+        -> 1173 leveldb::ParseFileName probe
+          -> 1174 leveldb::ConsumeDecimalNumber probe
+          <- 1174 leveldb::ConsumeDecimalNumber
+        <- 1173 leveldb::ParseFileName
+        -> 1177 leveldb::ParseFileName probe
+          -> 1178 leveldb::ConsumeDecimalNumber probe
+          <- 1178 leveldb::ConsumeDecimalNumber
+        <- 1177 leveldb::ParseFileName
+        -> 1181 leveldb::Log probe
+        <- 1181 leveldb::Log
+        -> 1183 leveldb::(anonymous namespace)::PosixEnv::DeleteFile probe
+        <- 1183 leveldb::(anonymous namespace)::PosixEnv::DeleteFile
+        -> 1185 leveldb::ParseFileName probe
+          -> 1186 leveldb::ConsumeDecimalNumber probe
+          <- 1186 leveldb::ConsumeDecimalNumber
+        <- 1185 leveldb::ParseFileName
+        -> 1189 leveldb::ParseFileName probe
+          -> 1190 leveldb::ConsumeDecimalNumber probe
+          <- 1190 leveldb::ConsumeDecimalNumber
+        <- 1189 leveldb::ParseFileName
+        -> 1193 leveldb::Log probe
+        <- 1193 leveldb::Log
+        -> 1195 leveldb::(anonymous namespace)::PosixEnv::DeleteFile probe
+        <- 1195 leveldb::(anonymous namespace)::PosixEnv::DeleteFile
+        -> 1197 leveldb::ParseFileName probe
+        <- 1197 leveldb::ParseFileName
+        -> 1199 leveldb::ParseFileName probe
+          -> 1200 leveldb::ConsumeDecimalNumber probe
+          <- 1200 leveldb::ConsumeDecimalNumber
+        <- 1199 leveldb::ParseFileName
+      <- 1146 leveldb::DBImpl::DeleteObsoleteFiles
+      -> 1204 leveldb::DBImpl::MaybeScheduleCompaction probe
+      <- 1204 leveldb::DBImpl::MaybeScheduleCompaction
+    <- 14 leveldb::DB::Open
+    -> 1207 leveldb::DBImpl::Put probe
+      -> 1208 leveldb::DB::Put probe
+        -> 1209 leveldb::WriteBatch::WriteBatch probe
+          -> 1210 leveldb::WriteBatch::WriteBatch probe
+            -> 1211 leveldb::WriteBatch::Clear probe
+            <- 1211 leveldb::WriteBatch::Clear
+          <- 1210 leveldb::WriteBatch::WriteBatch
+        <- 1209 leveldb::WriteBatch::WriteBatch
+        -> 1215 leveldb::WriteBatch::Put probe
+          -> 1216 Count probe
+          <- 1216 Count
+          -> 1217 SetCount probe
+          <- 1217 SetCount
+          -> 1218 leveldb::EncodeFixed32 probe
+          <- 1218 leveldb::EncodeFixed32
+          -> 1220 leveldb::PutLengthPrefixedSlice probe
+            -> 1221 PutVarint32 probe
+            <- 1221 PutVarint32
+            -> 1222 EncodeVarint32 probe
+            <- 1222 EncodeVarint32
+          <- 1220 leveldb::PutLengthPrefixedSlice
+          -> 1224 leveldb::PutLengthPrefixedSlice probe
+            -> 1225 PutVarint32 probe
+            <- 1225 PutVarint32
+            -> 1226 EncodeVarint32 probe
+            <- 1226 EncodeVarint32
+          <- 1224 leveldb::PutLengthPrefixedSlice
+        <- 1215 leveldb::WriteBatch::Put
+        -> 1229 leveldb::DBImpl::Write probe
+          -> 1230 Writer probe
+          <- 1230 Writer
+          -> 1231 leveldb::DBImpl::MakeRoomForWrite probe
+            -> 1232 leveldb::VersionSet::NumLevelFiles probe
+            <- 1232 leveldb::VersionSet::NumLevelFiles
+            -> 1234 leveldb::MemTable::ApproximateMemoryUsage probe
+            <- 1234 leveldb::MemTable::ApproximateMemoryUsage
+          <- 1231 leveldb::DBImpl::MakeRoomForWrite
+          -> 1237 leveldb::DBImpl::BuildBatchGroup probe
+          <- 1237 leveldb::DBImpl::BuildBatchGroup
+          -> 1239 leveldb::WriteBatchInternal::SetSequence probe
+            -> 1240 leveldb::EncodeFixed64 probe
+            <- 1240 leveldb::EncodeFixed64
+          <- 1239 leveldb::WriteBatchInternal::SetSequence
+          -> 1243 leveldb::WriteBatchInternal::Count probe
+          <- 1243 leveldb::WriteBatchInternal::Count
+          -> 1245 leveldb::log::Writer::AddRecord probe
+            -> 1246 leveldb::log::Writer::EmitPhysicalRecord probe
+              -> 1247 leveldb::crc32c::Extend probe
+                -> 1248 RoundUp\<4\> probe
+                <- 1248 RoundUp\<4\>
+              <- 1247 leveldb::crc32c::Extend
+              -> 1250 leveldb::EncodeFixed32 probe
+              <- 1250 leveldb::EncodeFixed32
+              -> 1252 leveldb::(anonymous namespace)::PosixWritableFile::Append probe
+              <- 1252 leveldb::(anonymous namespace)::PosixWritableFile::Append
+              -> 1254 leveldb::(anonymous namespace)::PosixWritableFile::Append probe
+              <- 1254 leveldb::(anonymous namespace)::PosixWritableFile::Append
+              -> 1256 leveldb::(anonymous namespace)::PosixWritableFile::Flush probe
+                -> 1257 FlushBuffer probe
+                <- 1257 FlushBuffer
+                -> 1258 WriteUnbuffered probe
+                <- 1258 WriteUnbuffered
+              <- 1256 leveldb::(anonymous namespace)::PosixWritableFile::Flush
+            <- 1246 leveldb::log::Writer::EmitPhysicalRecord
+          <- 1245 leveldb::log::Writer::AddRecord
+          -> 1262 leveldb::WriteBatchInternal::InsertInto probe
+            -> 1263 MemTableInserter probe
+            <- 1263 MemTableInserter
+            -> 1264 Sequence probe
+            <- 1264 Sequence
+            -> 1265 leveldb::WriteBatch::Iterate probe
+              -> 1266 leveldb::GetLengthPrefixedSlice probe
+                -> 1267 GetVarint32 probe
+                <- 1267 GetVarint32
+              <- 1266 leveldb::GetLengthPrefixedSlice
+              -> 1269 leveldb::GetLengthPrefixedSlice probe
+                -> 1270 GetVarint32 probe
+                <- 1270 GetVarint32
+              <- 1269 leveldb::GetLengthPrefixedSlice
+              -> 1272 Put probe
+              <- 1272 Put
+              -> 1273 leveldb::MemTable::Add probe
+                -> 1274 leveldb::VarintLength probe
+                <- 1274 leveldb::VarintLength
+                -> 1276 leveldb::VarintLength probe
+                <- 1276 leveldb::VarintLength
+                -> 1278 leveldb::EncodeVarint32 probe
+                <- 1278 leveldb::EncodeVarint32
+                -> 1280 leveldb::EncodeFixed64 probe
+                <- 1280 leveldb::EncodeFixed64
+                -> 1282 leveldb::EncodeVarint32 probe
+                <- 1282 leveldb::EncodeVarint32
+                -> 1284 leveldb::Arena::AllocateAligned probe
+                <- 1284 leveldb::Arena::AllocateAligned
+              <- 1273 leveldb::MemTable::Add
+              -> 1287 Count probe
+              <- 1287 Count
+            <- 1265 leveldb::WriteBatch::Iterate
+            -> 1289 ~MemTableInserter probe
+            <- 1289 ~MemTableInserter
+            -> 1290 leveldb::WriteBatch::Handler::~Handler probe
+            <- 1290 leveldb::WriteBatch::Handler::~Handler
+          <- 1262 leveldb::WriteBatchInternal::InsertInto
+          -> 1293 ~Writer probe
+          <- 1293 ~Writer
+        <- 1229 leveldb::DBImpl::Write
+        -> 1295 leveldb::WriteBatch::~WriteBatch probe
+        <- 1295 leveldb::WriteBatch::~WriteBatch
+      <- 1208 leveldb::DB::Put
+    <- 1207 leveldb::DBImpl::Put
+    -> 1299 leveldb::DBImpl::Get probe
+      -> 1300 leveldb::Version::Ref probe
+      <- 1300 leveldb::Version::Ref
+      -> 1302 leveldb::LookupKey::LookupKey probe
+        -> 1303 leveldb::EncodeVarint32 probe
+        <- 1303 leveldb::EncodeVarint32
+        -> 1305 PackSequenceAndType probe
+        <- 1305 PackSequenceAndType
+        -> 1306 leveldb::EncodeFixed64 probe
+        <- 1306 leveldb::EncodeFixed64
+      <- 1302 leveldb::LookupKey::LookupKey
+      -> 1309 leveldb::MemTable::Get probe
+        -> 1310 GetLengthPrefixedSlice probe
+        <- 1310 GetLengthPrefixedSlice
+        -> 1311 operator probe
+        <- 1311 operator
+        -> 1312 GetLengthPrefixedSlice probe
+        <- 1312 GetLengthPrefixedSlice
+        -> 1313 leveldb::InternalKeyComparator::Compare probe
+          -> 1314 leveldb::(anonymous namespace)::BytewiseComparatorImpl::Compare probe
+          <- 1314 leveldb::(anonymous namespace)::BytewiseComparatorImpl::Compare
+          -> 1316 Compare probe
+          <- 1316 Compare
+        <- 1313 leveldb::InternalKeyComparator::Compare
+        -> 1318 GetLengthPrefixedSlice probe
+        <- 1318 GetLengthPrefixedSlice
+        -> 1319 operator probe
+        <- 1319 operator
+        -> 1320 GetLengthPrefixedSlice probe
+        <- 1320 GetLengthPrefixedSlice
+        -> 1321 leveldb::InternalKeyComparator::Compare probe
+          -> 1322 leveldb::(anonymous namespace)::BytewiseComparatorImpl::Compare probe
+          <- 1322 leveldb::(anonymous namespace)::BytewiseComparatorImpl::Compare
+          -> 1324 Compare probe
+          <- 1324 Compare
+        <- 1321 leveldb::InternalKeyComparator::Compare
+        -> 1326 leveldb::(anonymous namespace)::BytewiseComparatorImpl::Compare probe
+        <- 1326 leveldb::(anonymous namespace)::BytewiseComparatorImpl::Compare
+        -> 1328 GetLengthPrefixedSlice probe
+        <- 1328 GetLengthPrefixedSlice
+      <- 1309 leveldb::MemTable::Get
+      -> 1330 leveldb::Version::Unref probe
+      <- 1330 leveldb::Version::Unref
+    <- 1299 leveldb::DBImpl::Get
+  <- 8584 main

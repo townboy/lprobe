@@ -1,0 +1,5 @@
+cmake_minimum_required (VERSION 2.8)
+project(lprobe LANGUAGES CXX)
+set(CMAKE_BUILD_TYPE "Debug")
+set(CMAKE_CXX_FLAGS_DEBUG "-O0 -Wall -g -ggdb -std=c++17")
+add_executable(lprobe-dotmaker dotmaker.cc)

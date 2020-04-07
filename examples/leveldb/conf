@@ -1,0 +1,1 @@
+process("/usr/lib/libleveldb.so").function("*@*.cc")

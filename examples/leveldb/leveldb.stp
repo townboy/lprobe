@@ -1,0 +1,15 @@
+probe process("/usr/lib/libleveldb.so").function("*@*.cc").call
+{
+	printf("%s %s\n", thread_indent(0), pp());
+	print_ubacktrace();
+}
+probe process("/usr/lib/libleveldb.so").function("*@*.cc").return
+{
+	printf("%s %s\n", thread_indent(0), pp());
+	print_ubacktrace();
+}
+probe process("/usr/lib/libleveldb.so").function("*@*.cc").inline
+{
+	printf("%s %s\n", thread_indent(0), pp());
+	print_ubacktrace();
+}
